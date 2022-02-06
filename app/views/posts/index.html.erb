@@ -1,0 +1,11 @@
+<h1>micro reddit - posts feed</h1>
+
+
+<% @posts.each do |p|%>
+<h3><%= link_to p.title, user_post_path(p.user, p) %></h3>
+<p><%= p.content%></p>
+<br>
+
+<%end%>
+
+

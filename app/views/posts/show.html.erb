@@ -1,0 +1,4 @@
+<h1><%= @post.title %> </h1>
+<h3>by <%= link_to @post.user.name, user_path(@post.user)%></h3>
+<h3><%= @post.content %><h3>
+<h5>post date: <%= @post.created_at%></h5>
